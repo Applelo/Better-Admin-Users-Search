@@ -1,2 +1,2 @@
-# Better-Admin-Users-Search
+# Better Admin Users Search
 WordPress Plugin to improve users admin search
