@@ -3,14 +3,15 @@
   "require": {
     "php": ">=5.3.0",
     "composer/installers": "v1.0.12",
-    "cmb2/cmb2": "dev-master"
+    "cmb2/cmb2": "dev-master",
+    "podkot/cmb-field-select2" : "^2.1"
   },
   "autoload": {
-    "files": ["vendor/cmb2/init.php"]
+    "files": ["vendor/cmb2/init.php", "vendor/cmb-field-select2/cmb-field-select2.php"]
   },
   "extra": {
     "installer-paths": {
-      "vendor/{$name}/": ["cmb2/cmb2"]
+      "vendor/{$name}/": ["cmb2/cmb2", "podkot/cmb-field-select2"]
     }
   }
 }
