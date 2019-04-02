@@ -18,7 +18,7 @@ public function add_metabox() {
         'id'           => BETTER_ADMIN_USERS_SEARCH_PREFIX . '_settings_page',
         'title'        => esc_html__( 'Better Admin Users Search', BETTER_ADMIN_USERS_SEARCH_PREFIX ),
         'object_types' => array( 'options-page' ),
-        'option_key'      => 'options-general',
+        'option_key'      => BETTER_ADMIN_USERS_SEARCH_PREFIX . '_options',
         'parent_slug'     => 'options-general.php',
         'capability'      => 'manage_options',
     ) );
@@ -49,19 +49,13 @@ public function add_metabox() {
         'on_front' => false,
     ) );
 
-    $mine_metas = array();
-    foreach ($this->utils->get_user_metas() as $meta) {
-        $my_meta = wp_get_current_user()->get($meta);
-        $mine_metas[] = $meta . (empty($my_meta) ? '' : ', for you this data is "' . $my_meta . '"');
-    }
-
-
+    
     $cmb_options->add_field( array(
         'name'    => 'UserMeta(s)',
         'id'      => BETTER_ADMIN_USERS_SEARCH_PREFIX . '_metas',
         'desc'    => 'Select metas you want to add to your search',
         'type'    => 'pw_multiselect',
-        'options' => array_combine($this->utils->get_user_metas(), $mine_metas)
+        'options' => $this->utils->get_user_metas()
     ));
 
 
