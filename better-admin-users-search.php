@@ -28,9 +28,18 @@ function load_i18n() {
     load_plugin_textdomain( 'baus', FALSE, basename( dirname( __FILE__ ) ) . '/i18n/' );
 }
 
+function add_action_links ( $links ) {
+    $mylinks = array(
+        '<a href="' . admin_url( 'options-general.php?page=baus_options' ) . '">' . __('Settings', 'baus') . '</a>',
+    );
+    return array_merge( $links, $mylinks );
+}
+
+
 
 function baus() {
     add_action( 'plugins_loaded', 'load_i18n');
+    add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'add_action_links' );
     new Better_Admin_Users_Search();
 }
 baus();

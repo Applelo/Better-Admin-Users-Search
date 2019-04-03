@@ -37,6 +37,8 @@ You need to install/run `npm` and `composer` (Google it if you don't know this v
 
 You may need to install additionals packages but the terminal should prompt it ;) 
 
+To create the plugin zip file, just run `npm run grunt`.
+
 That it, nothing less, nothing more.
 
 

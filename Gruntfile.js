@@ -16,6 +16,7 @@ module.exports = function(grunt) {
                     domainPath: 'i18n/',
                     potComments: '',
                     potFilename: 'baus.pot',
+                    exclude: ['vendor', 'node_modules'],
                     type: 'wp-plugin',
                     updateTimestamp: true,
                     potHeaders: {
@@ -24,7 +25,7 @@ module.exports = function(grunt) {
                         'x-poedit-keywordslist': true
                     },
                     processPot: function( pot, options ) {
-                        pot.headers['report-msgid-bugs-to'] = 'http://wordpress.org/support/plugin/cmb2';
+                        pot.headers['report-msgid-bugs-to'] = 'http://wordpress.org/support/plugin/better-admin-users-search';
                         pot.headers['last-translator'] = 'Applelo boubaultlois@gmail.com';
                         pot.headers['language-team'] = 'Applelo boubaultlois@gmail.com';
                         var today = new Date();
@@ -78,7 +79,9 @@ module.exports = function(grunt) {
             },
             files: {
                 src: [
-                    'includes/*.php',
+                    '**/*.php',
+                    '!vendor/**',
+                    '!node_modules/**'
                 ],
                 expand: true
             }
