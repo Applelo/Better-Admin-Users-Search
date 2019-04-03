@@ -6,3 +6,4 @@ composer.phar
 .sass-cache
 composer.lock
 package-lock.json
+.files.json

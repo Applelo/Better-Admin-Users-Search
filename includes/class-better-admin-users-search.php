@@ -3,8 +3,6 @@
 
 class Better_Admin_Users_Search {
 
-
-
 	private $plugin_name;
 	private $version;
 
@@ -17,14 +15,13 @@ class Better_Admin_Users_Search {
 		$this->plugin_name = 'better-admin-users-search';
 
 		$this->load_dependencies();
-
         $this->create_admin_page();
         $this->users_search();
 	}
 
 
 	private function load_dependencies() {
-	    require_once plugin_dir_path(dirname(__FILE__)) .'vendor/autoload.php';
+	    require_once plugin_dir_path(dirname(__FILE__)) . 'vendor/autoload.php';
 	    require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-better-admin-users-search-utils.php';
 	    require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-better-admin-users-search-admin-page.php';
         require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-better-admin-users-search-hook.php';
