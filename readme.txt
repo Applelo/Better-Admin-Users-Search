@@ -2,7 +2,8 @@
 Contributors: Applelo
 Donate link: https://lois-boubault.me
 Tags: search, admin, users, better, usermeta, meta
-Requires at least: 4.6
+Requires at least: 3.8.0
+Requires PHP:      5.2
 Tested up to: 5.1
 Stable tag: 3.5.7
 License: GPLv3
