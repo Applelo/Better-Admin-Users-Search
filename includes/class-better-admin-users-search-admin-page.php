@@ -38,7 +38,7 @@ public function add_metabox() {
             'id'      => BETTER_ADMIN_USERS_SEARCH_PREFIX . '_default_value_' . $entry,
             'default' => $this->cmb2_set_checkbox_default_for_new_post( true ),
             'description' => sprintf(
-                esc_html__('For you, this data is "%s"', 'baus'),
+                __('For you, this data is "%s"', 'baus'),
                 wp_get_current_user()->get($entry)
             )
         ) );
@@ -56,7 +56,7 @@ public function add_metabox() {
     $cmb_options->add_field( array(
         'name'    => __('User meta(s)', 'baus'),
         'id'      => BETTER_ADMIN_USERS_SEARCH_PREFIX . '_metas',
-        'desc'    => esc_html__('Select metas you want to add to your search', 'baus'),
+        'desc'    => __('Select metas you want to add to your search.', 'baus') . '<br>' . __('Note: Some metas won\'t work because their are not string.', 'baus'),
         'type'    => 'pw_multiselect',
         'options' => $this->utils->get_user_metas()
     ));

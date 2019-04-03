@@ -24,7 +24,7 @@ class Better_Admin_Users_Admin_Utils
         $user_metas = $wpdb->get_results($select, ARRAY_A);
 
         foreach ($user_metas as $meta) {
-           $metas[] = $meta["meta_key"];
+           $metas[] = htmlspecialchars($meta["meta_key"]);
         }
         return $metas;
     }

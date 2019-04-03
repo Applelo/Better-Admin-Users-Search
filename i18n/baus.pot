@@ -5,11 +5,11 @@ msgstr ""
 "Project-Id-Version: Better Admin Users Search 1.0.0\n"
 "Report-Msgid-Bugs-To: "
 "http://wordpress.org/support/plugin/better-admin-users-search\n"
-"POT-Creation-Date: 2019-04-03 02:49:06+00:00\n"
+"POT-Creation-Date: 2019-04-03 22:10:52+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-4-2 2:49+240\n"
+"PO-Revision-Date: 2019-4-3 22:10+240\n"
 "Last-Translator: Applelo boubaultlois@gmail.com\n"
 "Language-Team: Applelo boubaultlois@gmail.com\n"
 "Language: en_US\n"
@@ -54,7 +54,11 @@ msgid "User meta(s)"
 msgstr ""
 
 #: includes/class-better-admin-users-search-admin-page.php:59
-msgid "Select metas you want to add to your search"
+msgid "Select metas you want to add to your search."
+msgstr ""
+
+#: includes/class-better-admin-users-search-admin-page.php:59
+msgid "Note: Some metas won't work because their are not string."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
