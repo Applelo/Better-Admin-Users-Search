@@ -35,9 +35,26 @@ function add_action_links ( $links ) {
     return array_merge( $links, $mylinks );
 }
 
+function create_default_options()
+{
+    $default_option = array(
+        "baus_metas" => array(),
+        "baus_default_value_user_url" => "on",
+        "baus_default_value_user_email" => "on",
+        "baus_default_value_user_nicename" => "on",
+        "baus_default_value_display_name" => "on",
+        "baus_default_value_user_login" => "on"
+    );
+
+    if( !get_option(BETTER_ADMIN_USERS_SEARCH_PREFIX . '_options') ) {
+        update_option(BETTER_ADMIN_USERS_SEARCH_PREFIX . '_options', $default_option);
+    }
+}
+
 
 
 function baus() {
+    register_activation_hook( __FILE__, 'create_default_options' );
     add_action( 'plugins_loaded', 'load_i18n');
     add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'add_action_links' );
     new Better_Admin_Users_Search();

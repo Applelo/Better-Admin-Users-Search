@@ -42,7 +42,6 @@ class Better_Admin_Users_Search_Admin_Page
                 'name'    => esc_html($entry),
                 'type'    => 'checkbox',
                 'id'      => BETTER_ADMIN_USERS_SEARCH_PREFIX . '_default_value_' . $entry,
-                'default' => $this->cmb2_set_checkbox_default_for_new_post( true ),
                 'description' => sprintf(
                     __('For you, this data is "%s"', 'baus'),
                     wp_get_current_user()->get($entry)
@@ -52,7 +51,7 @@ class Better_Admin_Users_Search_Admin_Page
 
         $cmb_options->add_field( array(
             'name'     => __('Additionals metas', 'baus'),
-            'desc'     => __('Add additional user metas to the admin user search', 'baus'),
+            'desc'     => __('Add additional user metas to the admin user search', 'baus') . '<br>' . __('Note: Some metas won\'t work because their are not string.', 'baus'),
             'id'       => BETTER_ADMIN_USERS_SEARCH_PREFIX . '_title_metas',
             'type'     => 'title',
             'on_front' => false,
@@ -62,16 +61,12 @@ class Better_Admin_Users_Search_Admin_Page
         $cmb_options->add_field( array(
             'name'    => __('User meta(s)', 'baus'),
             'id'      => BETTER_ADMIN_USERS_SEARCH_PREFIX . '_metas',
-            'desc'    => __('Select metas you want to add to your search.', 'baus') . '<br>' . __('Note: Some metas won\'t work because their are not string.', 'baus'),
+            'desc'    => __('Select metas you want to add to your search.', 'baus'),
             'type'    => 'pw_multiselect',
-            'options' => $this->get_user_metas()
+            'options' => $this->get_user_metas(),
         ));
 
 
-    }
-
-    private function cmb2_set_checkbox_default_for_new_post( $default ) {
-        return isset( $_GET['post'] ) ? '' : ( $default ? (string) $default : '' );
     }
 
     private function get_user_metas() {
@@ -81,7 +76,7 @@ class Better_Admin_Users_Search_Admin_Page
         $user_metas = $wpdb->get_results($select, ARRAY_A);
 
         foreach ($user_metas as $meta) {
-            $metas[] = htmlspecialchars($meta["meta_key"]);
+            $metas[$meta["meta_key"]] = htmlspecialchars($meta["meta_key"]);
         }
         return $metas;
     }

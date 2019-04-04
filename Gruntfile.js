@@ -104,7 +104,8 @@ module.exports = function(grunt) {
                         '!package-lock.json',
                         '!composer.json',
                         '!composer.lock',
-                        '!phpunit.xml'
+                        '!phpunit.xml',
+                        '!.wordpress-org/**'
                     ],
                     dest: '/'
                 } ]

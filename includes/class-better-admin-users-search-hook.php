@@ -25,11 +25,16 @@ class Better_Admin_Users_Search_Hook
             return;
         }
 
+        global $wpdb;
+
         $this->search = $query->query_vars['search'];
-        $this->search = '%'.trim($this->search, '*').'%';
+        $this->search = '%%'.trim($this->search, '*').'%%';
+        $this->search = htmlspecialchars($this->search);
 
         preg_match("/{(.*?)}/", $query->query_where, $query_key);
         $query_key = $query_key[0];
+
+        $this->search = $query_key . $this->search . $query_key;
 
         //get default values
         foreach ($this->options as $key => $value) {
@@ -39,7 +44,8 @@ class Better_Admin_Users_Search_Hook
         }
 
         //get meta values
-        $this->meta_values = $this->options['baus_metas'];
+        $this->meta_values = empty($this->options['baus_metas']) ? array() : $this->options['baus_metas'];
+
 
 
         $query_where = 'WHERE 1=1';
@@ -54,14 +60,13 @@ class Better_Admin_Users_Search_Hook
                 if ($i > 0) {
                     $query_where .= ' OR ';
                 }
-                $query_where .= $default_value . ' LIKE \'' . $query_key . $this->search . $query_key . '\'';
+                $query_where .= $wpdb->prepare('%s LIKE \'%s\'', $default_value, $this->search);
                 $i++;
             }
         }
 
 
         if (count($this->meta_values) > 0) {
-            global $wpdb;
 
             $search_metas = "ID IN ( SELECT user_id FROM {$wpdb->usermeta} WHERE ( (";
             $i = 0;
@@ -69,7 +74,7 @@ class Better_Admin_Users_Search_Hook
                 if ($i > 0) {
                     $search_metas .= ' OR ';
                 }
-                $search_metas .= "meta_key='$meta_value'";
+                $search_metas .= $wpdb->prepare('meta_key=\'%s\'',$meta_value);
                 $i++;
             }
             $search_metas .= ") AND {$wpdb->usermeta}.meta_value LIKE '%s'))";
@@ -86,7 +91,6 @@ class Better_Admin_Users_Search_Hook
         }
 
         $query->query_where = $query_where;
-
 
     }
 

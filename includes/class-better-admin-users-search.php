@@ -22,7 +22,6 @@ class Better_Admin_Users_Search {
 
 	private function load_dependencies() {
 	    require_once plugin_dir_path(dirname(__FILE__)) . 'vendor/autoload.php';
-	    require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-better-admin-users-search-utils.php';
 	    require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-better-admin-users-search-admin-page.php';
         require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-better-admin-users-search-hook.php';
 

@@ -8,5 +8,3 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
 $option_name = 'baus_options';
 
 delete_option($option_name);
-// for site options in Multisite
-delete_site_option($option_name);
