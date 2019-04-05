@@ -8,6 +8,11 @@ This plugin improve the admin users search. Just configure what datas you need t
 
 You can choose to configure what default wordpress search (login, url, email, nicename, display_name) and extends search with user metas (last_name, first_name...).
 
+<p align="center">
+  <img src="https://github.com/Applelo/Better-Admin-Users-Search/blob/master/.wordpress-org/screenshot-1.png?raw=true" width="750" title="The Better Admin Users Search settings screen">
+  <img src="https://github.com/Applelo/Better-Admin-Users-Search/blob/master/.wordpress-org/screenshot-2.png?raw=true" width="750" alt="The result with Better Admin Users Search activated">
+</p>
+
 Free tip: this plugin do more sense with [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) ;)
 
 ## Installation
