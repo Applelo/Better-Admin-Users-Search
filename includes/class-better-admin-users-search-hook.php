@@ -28,13 +28,8 @@ class Better_Admin_Users_Search_Hook
         global $wpdb;
 
         $this->search = $query->query_vars['search'];
-        $this->search = '%%'.trim($this->search, '*').'%%';
+        $this->search = '%'.trim($this->search, '*').'%';
         $this->search = htmlspecialchars($this->search);
-
-        preg_match("/{(.*?)}/", $query->query_where, $query_key);
-        $query_key = $query_key[0];
-
-        $this->search = $query_key . $this->search . $query_key;
 
         //get default values
         foreach ($this->options as $key => $value) {
@@ -60,10 +55,11 @@ class Better_Admin_Users_Search_Hook
                 if ($i > 0) {
                     $query_where .= ' OR ';
                 }
-                $query_where .= $wpdb->prepare('%s LIKE \'%s\'', $default_value, $this->search);
+                $query_where .= $wpdb->prepare($default_value . ' LIKE %s', $this->search);
                 $i++;
             }
         }
+
 
 
         if (count($this->meta_values) > 0) {
@@ -77,7 +73,7 @@ class Better_Admin_Users_Search_Hook
                 $search_metas .= $wpdb->prepare('meta_key=\'%s\'',$meta_value);
                 $i++;
             }
-            $search_metas .= ") AND {$wpdb->usermeta}.meta_value LIKE '%s'))";
+            $search_metas .= ") AND {$wpdb->usermeta}.meta_value LIKE %s))";
             $search_metas = $wpdb->prepare($search_metas, $this->search);
 
             if (count($this->default_values) > 0) {
@@ -89,6 +85,7 @@ class Better_Admin_Users_Search_Hook
         if (count($this->default_values) + count($this->meta_values) > 0 ) {
             $query_where .= ')';
         }
+
 
         $query->query_where = $query_where;
 
