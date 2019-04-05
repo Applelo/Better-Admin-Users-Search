@@ -70,7 +70,7 @@ class Better_Admin_Users_Search_Hook
                 if ($i > 0) {
                     $search_metas .= ' OR ';
                 }
-                $search_metas .= $wpdb->prepare('meta_key=\'%s\'',$meta_value);
+                $search_metas .= $wpdb->prepare('meta_key=%s',$meta_value);
                 $i++;
             }
             $search_metas .= ") AND {$wpdb->usermeta}.meta_value LIKE %s))";
