@@ -5,11 +5,11 @@ msgstr ""
 "Project-Id-Version: Better Admin Users Search 1.0.0\n"
 "Report-Msgid-Bugs-To: "
 "http://wordpress.org/support/plugin/better-admin-users-search\n"
-"POT-Creation-Date: 2019-04-05 22:34:16+00:00\n"
+"POT-Creation-Date: 2019-04-06 23:45:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-4-5 22:34+240\n"
+"PO-Revision-Date: 2019-4-6 23:45+240\n"
 "Last-Translator: Applelo boubaultlois@gmail.com\n"
 "Language-Team: Applelo boubaultlois@gmail.com\n"
 "Language: en_US\n"
@@ -29,35 +29,35 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: includes/class-better-admin-users-search-admin-page.php:33
+#: includes/class-better-admin-users-search-admin-page.php:34
 msgid "Default search values"
 msgstr ""
 
-#: includes/class-better-admin-users-search-admin-page.php:34
+#: includes/class-better-admin-users-search-admin-page.php:35
 msgid "Default values used by WordPress to do the search"
 msgstr ""
 
-#: includes/class-better-admin-users-search-admin-page.php:46
+#: includes/class-better-admin-users-search-admin-page.php:47
 msgid "For you, this data is \"%s\""
 msgstr ""
 
-#: includes/class-better-admin-users-search-admin-page.php:53
+#: includes/class-better-admin-users-search-admin-page.php:54
 msgid "Additionals metas"
 msgstr ""
 
-#: includes/class-better-admin-users-search-admin-page.php:54
+#: includes/class-better-admin-users-search-admin-page.php:55
 msgid "Add additional user metas to the admin user search"
 msgstr ""
 
-#: includes/class-better-admin-users-search-admin-page.php:54
+#: includes/class-better-admin-users-search-admin-page.php:55
 msgid "Note: Some metas won't work because their are not string."
 msgstr ""
 
-#: includes/class-better-admin-users-search-admin-page.php:62
+#: includes/class-better-admin-users-search-admin-page.php:63
 msgid "User meta(s)"
 msgstr ""
 
-#: includes/class-better-admin-users-search-admin-page.php:64
+#: includes/class-better-admin-users-search-admin-page.php:65
 msgid "Select metas you want to add to your search."
 msgstr ""
 
