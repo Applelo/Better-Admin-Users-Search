@@ -5,7 +5,7 @@ Tags: search, admin, users, better, usermeta, meta
 Requires at least: 3.8.0
 Requires PHP:      5.2
 Tested up to: 5.1
-Stable tag: 3.5.7
+Stable tag: 1.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
