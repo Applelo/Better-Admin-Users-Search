@@ -55,6 +55,10 @@ That it, nothing less, nothing more.
 
 ## Changelog
 
+### 1.1.1
+
+-   Fix bugs
+
 ### 1.1
 
 -   Update composer dependancies

@@ -4,7 +4,7 @@ Tags: search, admin, users, better, usermeta, meta
 Requires at least: 3.8.0
 Requires PHP:      5.2
 Tested up to: 5.5
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,6 +51,10 @@ Sure, just go to the [official repository](https://github.com/Applelo/Better-Adm
 2. The result with Better Admin Users Search activated
 
 == Changelog ==
+
+= 1.1.1 =
+
+* Fix bugs
 
 = 1.1 =
 * Update composer dependancies
