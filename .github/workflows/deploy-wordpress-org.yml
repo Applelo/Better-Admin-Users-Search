@@ -26,4 +26,4 @@ jobs:
                   SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
                   SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
                   SLUG: better-admin-users-search
-                  VERSION: 1.1.1
+                  VERSION: 1.1.2
