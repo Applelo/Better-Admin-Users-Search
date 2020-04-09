@@ -21,12 +21,12 @@ jobs:
                   key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
                   restore-keys: |
                       ${{ runner.os }}-composer-
-            - name: Build
+            - name: Install plugin dependancies
               run: |
-                  composer install
+                  composer install --no-dev --prefer-dist
             - name: WordPress Plugin Deploy
               uses: 10up/action-wordpress-plugin-deploy@master
               env:
-                  SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
                   SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+                  SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
                   SLUG: better-admin-users-search

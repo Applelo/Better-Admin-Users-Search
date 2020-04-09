@@ -9,5 +9,8 @@
             "vendor/cmb2/cmb2/init.php",
             "vendor/podkot/cmb-field-select2/cmb-field-select2.php"
         ]
+    },
+    "require-dev": {
+        "php-stubs/wordpress-globals": "^0.1.0"
     }
 }

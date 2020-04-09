@@ -12,7 +12,7 @@ Improve users admin search
 
 == Description ==
 
-This plugin improve the admin users search. Just configure what datas you need to search (or not) and that all :)
+This plugin improves the admin users search. Just configure what datas you need to search (or not) and that all :)
 You can choose to configure what default wordpress search (login, url, email, nicename, display_name) and extends search with user metas (last_name, first_name...).
 
 Free tip: this plugin do more sense with [Admin Columns](https://wordpress.org/plugins/codepress-admin-columns/) ;)
@@ -40,9 +40,10 @@ Sure, just go to the [official repository](https://github.com/Applelo/Better-Adm
 
 = Credits =
 
-* CMB2 Team for their incredible framework to create easily an settings screen
+* CMB2 Team
 * pokbot for the cmb-field-select2 add-on for CMB2
-* All people do an incredible jobs with grunt packages
+* WP Pot Team
+* 10up for the Wordpress Github Actions
 
 == Screenshots ==
 
@@ -50,6 +51,12 @@ Sure, just go to the [official repository](https://github.com/Applelo/Better-Adm
 2. The result with Better Admin Users Search activated
 
 == Changelog ==
+
+= 1.1 =
+* Update composer dependancies
+* Add GitHub actions to automate the publication
+* Add wp pot to generate the pot file
+* Remove grunt
 
 = 1.0 =
 * Initial release

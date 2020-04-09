@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "618faa4f81eb11eb03a90c3ee6290c21",
+    "content-hash": "2acfe106f6eb13f3535f83e5a3a05cd4",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -93,7 +93,45 @@
             "time": "2016-10-23T03:15:04+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "php-stubs/wordpress-globals",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-stubs/wordpress-globals.git",
+                "reference": "fa6ef3c694f8ec07eb28b6ffd55b30f9d6e622e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-stubs/wordpress-globals/zipball/fa6ef3c694f8ec07eb28b6ffd55b30f9d6e622e5",
+                "reference": "fa6ef3c694f8ec07eb28b6ffd55b30f9d6e622e5",
+                "shasum": ""
+            },
+            "require-dev": {
+                "php": "~7.1"
+            },
+            "suggest": {
+                "php-stubs/wordpress-stubs": "Up-to-date WordPress function and class declaration stubs",
+                "szepeviktor/phpstan-wordpress": "WordPress extensions for PHPStan"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Global variables and global constants from WordPress core.",
+            "homepage": "https://github.com/php-stubs/wordpress-globals",
+            "keywords": [
+                "PHPStan",
+                "constants",
+                "globals",
+                "static analysis",
+                "wordpress"
+            ],
+            "time": "2019-12-20T22:34:52+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
