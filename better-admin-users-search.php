@@ -17,7 +17,7 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
-define('BETTER_ADMIN_USERS_SEARCH_VERSION', '1.1.4' );
+define('BETTER_ADMIN_USERS_SEARCH_VERSION', '1.1.5' );
 define('BETTER_ADMIN_USERS_SEARCH_PREFIX', 'baus' );
 
 
