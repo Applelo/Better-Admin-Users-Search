@@ -2,7 +2,7 @@
 Contributors: Applelo
 Tags: search, admin, users, better, usermeta, meta
 Requires at least: 3.8.0
-Requires PHP:      5.2
+Requires PHP: 5.3
 Tested up to: 5.5
 Stable tag: 1.1.1
 License: GPLv3
