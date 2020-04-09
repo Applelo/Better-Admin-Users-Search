@@ -3,8 +3,8 @@ Contributors: Applelo
 Tags: search, admin, users, better, usermeta, meta
 Requires at least: 3.8.0
 Requires PHP: 5.3
-Tested up to: 5.5
-Stable tag: 1.1.1
+Tested up to: 5.4
+Stable tag: 1.1.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,7 +52,7 @@ Sure, just go to the [official repository](https://github.com/Applelo/Better-Adm
 
 == Changelog ==
 
-= 1.1.1 =
+= 1.1.1 - 1.1.3 =
 
 * Fix bugs
 
