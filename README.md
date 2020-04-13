@@ -55,7 +55,7 @@ That it, nothing less, nothing more.
 
 ## Changelog
 
-### 1.1.1 - 1.1.6
+### 1.1.1 - 1.1.7
 
 -   Fix bugs
 

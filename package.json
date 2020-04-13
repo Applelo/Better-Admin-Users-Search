@@ -1,6 +1,6 @@
 {
     "name": "better-admin-users-search",
-    "version": "1.1.0",
+    "version": "1.1.7",
     "license": "GPLv3",
     "scripts": {
         "pot": "node pot.js"
