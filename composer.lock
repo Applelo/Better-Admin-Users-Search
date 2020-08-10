@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2acfe106f6eb13f3535f83e5a3a05cd4",
+    "content-hash": "b1b4f6707830cb151a92026a3df43adb",
     "packages": [
         {
             "name": "cmb2/cmb2",
@@ -96,16 +96,16 @@
     "packages-dev": [
         {
             "name": "php-stubs/wordpress-globals",
-            "version": "v0.1.0",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-stubs/wordpress-globals.git",
-                "reference": "fa6ef3c694f8ec07eb28b6ffd55b30f9d6e622e5"
+                "reference": "748a1fb2ae8fda94844bd0545935095dbf404b32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-stubs/wordpress-globals/zipball/fa6ef3c694f8ec07eb28b6ffd55b30f9d6e622e5",
-                "reference": "fa6ef3c694f8ec07eb28b6ffd55b30f9d6e622e5",
+                "url": "https://api.github.com/repos/php-stubs/wordpress-globals/zipball/748a1fb2ae8fda94844bd0545935095dbf404b32",
+                "reference": "748a1fb2ae8fda94844bd0545935095dbf404b32",
                 "shasum": ""
             },
             "require-dev": {
@@ -129,7 +129,7 @@
                 "static analysis",
                 "wordpress"
             ],
-            "time": "2019-12-20T22:34:52+00:00"
+            "time": "2020-01-13T06:12:59+00:00"
         }
     ],
     "aliases": [],
@@ -138,5 +138,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
