@@ -11,7 +11,7 @@ jobs:
             - uses: actions/checkout@master
             - uses: shivammathur/setup-php@v2
               with:
-                  php-version: '5.3'
+                  php-version: '5.5'
                   tools: 'composer'
             - name: Install plugin dependancies
               run: |

@@ -3,7 +3,7 @@
  * Plugin Name:       Better Admin Users Search
  * Plugin URI:        https://github.com/Applelo/Better-Admin-Users-Search
  * Description:       A plugin to improve users admin search
- * Version:           1.1.7
+ * Version:           1.5.0
  * Author:            Applelo
  * License:           GPL-3.0+
  * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
@@ -16,7 +16,7 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
-define('BETTER_ADMIN_USERS_SEARCH_VERSION', '1.1.7' );
+define('BETTER_ADMIN_USERS_SEARCH_VERSION', '1.5.0' );
 define('BETTER_ADMIN_USERS_SEARCH_PREFIX', 'baus' );
 
 

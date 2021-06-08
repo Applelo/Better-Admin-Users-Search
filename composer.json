@@ -1,17 +1,25 @@
 {
-    "name": "better-admin-users-search",
+    "name": "applelo/better-admin-users-search",
+    "type": "wordpress-plugin",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Applelo",
+            "email": "boubaultlois@pm.me"
+        }
+    ],
     "require": {
-        "podkot/cmb-field-select2": "^2.1",
-        "cmb2/cmb2": "^2.7"
+        "podkot/cmb-field-select2": "^2.1.1",
+        "cmb2/cmb2": "^v2.9.0"
+    },
+    "require-dev": {
+        "php-stubs/wordpress-globals": "^v0.2.0"
     },
     "autoload": {
         "files": [
             "vendor/cmb2/cmb2/init.php",
             "vendor/podkot/cmb-field-select2/cmb-field-select2.php"
         ]
-    },
-    "require-dev": {
-        "php-stubs/wordpress-globals": "^0.1.0"
     },
     "config": {
         "autoloader-suffix": "baus"

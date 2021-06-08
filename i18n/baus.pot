@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Better Admin Users Search
+# Copyright (C) 2021 Better Admin Users Search
 # This file is distributed under the same license as the Better Admin Users Search package.
 msgid ""
 msgstr ""
