@@ -4,7 +4,7 @@ Tags: search, admin, users, better, usermeta, meta
 Requires at least: 4.1
 Requires PHP: 5.5
 Tested up to: 5.7.2
-Stable tag: 1.5
+Stable tag: 1.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -53,7 +53,7 @@ Sure, just go to the [official repository](https://github.com/Applelo/Better-Adm
 
 == Changelog ==
 
-= 1.5 =
+= 1.2 =
 * Update dependencies
 * Update pre-requires
 * Add logo for wordpress.org
