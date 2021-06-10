@@ -1,10 +1,10 @@
 === Better Admin Users Search ===
 Contributors: Applelo
 Tags: search, admin, users, better, usermeta, meta
-Requires at least: 3.8.0
-Requires PHP: 5.3
-Tested up to: 5.4
-Stable tag: 1.1.7
+Requires at least: 4.1
+Requires PHP: 5.5
+Tested up to: 5.7.2
+Stable tag: 1.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -44,6 +44,7 @@ Sure, just go to the [official repository](https://github.com/Applelo/Better-Adm
 * pokbot for the cmb-field-select2 add-on for CMB2
 * WP Pot Team
 * 10up for the Wordpress Github Actions
+* Font awesome icons for the logo
 
 == Screenshots ==
 
@@ -52,12 +53,16 @@ Sure, just go to the [official repository](https://github.com/Applelo/Better-Adm
 
 == Changelog ==
 
-= 1.1.1 - 1.1.4 =
+= 1.2 =
+* Update dependencies
+* Update pre-requires
+* Add logo for wordpress.org
 
+= 1.1.1 - 1.1.4 =
 * Fix bugs
 
 = 1.1 =
-* Update composer dependancies
+* Update composer dependencies
 * Add GitHub actions to automate the publication
 * Add wp pot to generate the pot file
 * Remove grunt

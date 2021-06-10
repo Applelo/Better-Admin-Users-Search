@@ -1,3 +1,5 @@
+![WordPress Plugin: Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/better-admin-users-search) ![WordPress Plugin Required PHP Version](https://img.shields.io/wordpress/plugin/required-php/better-admin-users-search) ![WordPress Plugin Active Installs](https://img.shields.io/wordpress/plugin/installs/better-admin-users-search) ![WordPress Plugin Rating](https://img.shields.io/wordpress/plugin/rating/better-admin-users-search)
+
 # Better Admin Users Search
 
 WordPress Plugin to improve users admin search
@@ -38,13 +40,14 @@ Sure, just go to the [official repository](https://github.com/Applelo/Better-Adm
 
 ## Build
 
-You need to install/run `npm` and `composer` (Google it if you don't know this very cool tools).
+You need to have already install `npm` and `composer`.I recommend to use VSCode with Intelephense plugin.
 
-You may need to install additionals packages but the terminal should prompt it ;)
+Clone the repository in the plugins wordpress folder.
+Run `composer install` and `npm i` to have everything ready to work.
 
-To create the plugin zip file, just run `npm run grunt`.
+The plugin should work now.
 
-That it, nothing less, nothing more.
+To update `.pot` files, `npm run pot`.
 
 ## Credits
 
@@ -52,20 +55,4 @@ That it, nothing less, nothing more.
 -   pokbot for the cmb-field-select2 add-on for CMB2
 -   WP Pot Team
 -   10up for the Wordpress Github Actions
-
-## Changelog
-
-### 1.1.1 - 1.1.7
-
--   Fix bugs
-
-### 1.1
-
--   Update composer dependancies
--   Add GitHub actions to automate the publication
--   Add wp pot to generate the pot file
--   Remove grunt
-
-### 1.0
-
--   Initial release
+-   Font awesome icons for the logo

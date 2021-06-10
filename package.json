@@ -1,14 +1,14 @@
 {
     "name": "better-admin-users-search",
-    "version": "1.1.7",
+    "version": "1.2.0",
     "license": "GPLv3",
     "scripts": {
         "pot": "node pot.js"
     },
     "devDependencies": {
-        "@prettier/plugin-php": "^0.14.0",
-        "prettier": "^2.0.4",
-        "wp-pot": "^1.9.1"
+        "@prettier/plugin-php": "^0.16.3",
+        "prettier": "^2.3.1",
+        "wp-pot": "^1.9.9"
     },
     "prettier": {
         "trailingComma": "es5",
@@ -21,7 +21,7 @@
                 "options": {
                     "phpVersion": "5.5",
                     "parser": "php",
-                    "tabWidth": "4",
+                    "tabWidth": 4,
                     "braceStyle": "1tbs"
                 }
             }
