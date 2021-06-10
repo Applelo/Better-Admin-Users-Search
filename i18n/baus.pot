@@ -15,11 +15,11 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../includes/class-better-admin-users-search-admin-page.php:34
+#: ../includes/class-better-admin-users-search-admin-page.php:28
 msgid "Default search values"
 msgstr ""
 
-#: ../includes/class-better-admin-users-search-admin-page.php:35
+#: ../includes/class-better-admin-users-search-admin-page.php:29
 msgid "Default values used by WordPress to do the search"
 msgstr ""
 
@@ -31,18 +31,18 @@ msgstr ""
 msgid "Additionals metas"
 msgstr ""
 
-#: ../includes/class-better-admin-users-search-admin-page.php:55
+#: ../includes/class-better-admin-users-search-admin-page.php:56
 msgid "Add additional user metas to the admin user search"
 msgstr ""
 
-#: ../includes/class-better-admin-users-search-admin-page.php:55
+#: ../includes/class-better-admin-users-search-admin-page.php:61
 msgid "Note: Some metas won't work because their are not string."
 msgstr ""
 
-#: ../includes/class-better-admin-users-search-admin-page.php:63
+#: ../includes/class-better-admin-users-search-admin-page.php:71
 msgid "User meta(s)"
 msgstr ""
 
-#: ../includes/class-better-admin-users-search-admin-page.php:65
+#: ../includes/class-better-admin-users-search-admin-page.php:73
 msgid "Select metas you want to add to your search."
 msgstr ""

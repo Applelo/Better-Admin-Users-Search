@@ -15,7 +15,7 @@ jobs:
                   tools: 'composer'
             - name: Install plugin dependancies
               run: |
-                  composer install --no-dev
+                  composer install --no-dev --optimize-autoloader
             - name: WordPress.org plugin asset/readme update
               uses: 10up/action-wordpress-plugin-asset-update@master
               env:
